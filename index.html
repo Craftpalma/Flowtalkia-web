@@ -77,14 +77,15 @@
     <!-- Puedes cambiar el enlace por tu LinkedIn o tu correo -->
     <a href="mailto:hola@flowtalkia.com" class="button">Contáctanos</a>
     <!-- FOOTER -->
-<footer class="footer">
-    <div class="container footer-content">
-        </div>
+    <footer class="footer">
         <p class="footer-copy">
-            © <span id="year"></span> Flowtalkia
+            © <span id="year"></span> Flowtalkia. Todos los derechos reservados.
         </p>
-    </div>
-    </div>
     </footer>
+
+    <!-- SCRIPT PARA EL AÑO AUTOMÁTICO -->
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
