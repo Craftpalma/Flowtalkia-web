@@ -41,9 +41,22 @@
             max-width: 100%; /* Para que no se desborde en móviles pequeños */
             height: auto;
             margin-bottom: 2rem;
-            /* Aquí puedes añadir un filtro para simular el neón si usas el icono sólido */
-            filter: drop-shadow(0 0 15px rgba(128, 85, 232, 0.4));
+            /* Aquí le decimos que anime el brillo durante 3 segundos, infinitamente y de forma suave */
+            animation: latido-neon 3s infinite alternate ease-in-out;
         }
+        /* Aquí definimos el latido */
+        @keyframes latido-neon {
+            0% {
+                /* Estado inicial: brillo suave y tamaño normal */
+                filter: drop-shadow(0 0 10px rgba(128, 85, 232, 0.3));
+                transform: scale(1);
+            }
+            100% {
+                /* Estado final: brillo intenso y un pelín más grande (1.03) */
+                filter: drop-shadow(0 0 35px rgba(128, 85, 232, 0.8));
+                transform: scale(1.03);
+            }
+               
         .button {
             background: linear-gradient(90deg, #3563F5, #8055E8);
             color: white;
@@ -71,3 +84,9 @@
             margin: 0;
             max-width: 100%; /* <-- AÑADE ESTO para anular el límite de 600px de los párrafos */
         }
+       /* desactivar la animación latidos*/
+       @media (prefers-reduced-motion: reduce) {
+           .icon {
+               animation: none;
+           }
+       }
