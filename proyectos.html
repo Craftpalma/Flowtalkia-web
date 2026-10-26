@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos | Flowtalkia</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap" rel="stylesheet">
+</head>
+<body style="justify-content: flex-start; padding-top: 50px;"> <!-- Ajuste para que el contenido empiece arriba -->
+
+    <!-- CABECERA DE LA PÁGINA -->
+    <div style="text-align: center; margin-bottom: 60px; padding: 0 20px;">
+        <a href="index.html" style="color: #8055E8; text-decoration: none; font-weight: bold; font-size: 0.9rem;">← Volver al inicio</a>
+        <h1 style="font-size: 3rem; margin-top: 20px; color: #ffffff;">Nuestros Proyectos</h1>
+        <p style="color: #9CA3AF; max-width: 600px; margin: 10px auto;">Casos de éxito reales. Descubre cómo hemos ayudado a negocios a automatizar sus procesos y escalar su presencia digital.</p>
+    </div>
+
+    <!-- CONTENEDOR DE PROYECTOS -->
+    <div style="max-width: 1000px; margin: 0 auto; padding: 0 20px; display: flex; flex-direction: column; gap: 40px; margin-bottom: 80px;">
+
+        <!-- TARJETA: SPAANS LEREN -->
+        <div class="portfolio-card" style="background: #1f2937; border-radius: 20px; overflow: hidden; display: flex; flex-wrap: wrap; box-shadow: 0 20px 40px rgba(0,0,0,0.4); border: 1px solid #374151;">
+            
+            <!-- Imagen del proyecto -->
+            <div class="portfolio-image" style="flex: 1 1 400px; min-height: 300px; background: #111827; position: relative;">
+                <img src="images/mockup-spaansleren.jpg" alt="Spaans Leren - Web" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;">
+            </div>
+
+            <!-- Información del proyecto -->
+            <div class="portfolio-info" style="flex: 1 1 400px; padding: 40px; display: flex; flex-direction: column; justify-content: center;">
+                <span style="color: #8055E8; font-weight: 700; font-size: 0.8rem; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px;">Sistema Web + IA</span>
+                
+                <h2 style="color: #ffffff; font-size: 2rem; margin-bottom: 15px; line-height: 1.2;">Spaans Leren</h2>
+                
+                <p style="color: #9CA3AF; margin-bottom: 20px; line-height: 1.6;">
+                    Plataforma web completa para una academia de español. Incluye un sistema de reservas automatizado con calendario interactivo, un panel de control privado protegido con Cloudflare Access y un asistente de Inteligencia Artificial (Gemini) que gestiona las citas en tiempo real.
+                </p>
+
+                <!-- Tecnologías -->
+                <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 30px;">
+                    <span style="background: rgba(53, 99, 245, 0.1); color: #3563F5; padding: 5px 12px; border-radius: 50px; font-size: 0.8rem; font-weight: 600; border: 1px solid rgba(53, 99, 245, 0.2);">Full-Stack</span>
+                    <span style="background: rgba(128, 85, 232, 0.1); color: #8055E8; padding: 5px 12px; border-radius: 50px; font-size: 0.8rem; font-weight: 600; border: 1px solid rgba(128, 85, 232, 0.2);">Cloudflare D1</span>
+                    <span style="background: rgba(128, 85, 232, 0.1); color: #8055E8; padding: 5px 12px; border-radius: 50px; font-size: 0.8rem; font-weight: 600; border: 1px solid rgba(128, 85, 232, 0.2);">Gemini AI</span>
+                    <span style="background: rgba(128, 85, 232, 0.1); color: #8055E8; padding: 5px 12px; border-radius: 50px; font-size: 0.8rem; font-weight: 600; border: 1px solid rgba(128, 85, 232, 0.2);">Resend API</span>
+                </div>
+
+                <a href="https://spaansmetgloria.com" target="_blank" class="button" style="align-self: flex-start; padding: 10px 25px;">Visitar Web Real</a>
+            </div>
+        </div>
+
+        <!-- AQUÍ PUEDES AÑADIR MÁS TARJETAS DE PROYECTOS EN EL FUTURO COPIANDO EL BLOQUE DE ARRIBA -->
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p class="footer-copy">
+            © <span id="year"></span> Flowtalkia. Todos los derechos reservados.
+        </p>
+    </footer>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
