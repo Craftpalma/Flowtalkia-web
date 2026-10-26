@@ -85,7 +85,19 @@
             margin: 0;
             max-width: 100%; /* <-- AÑADE ESTO para anular el límite de 600px de los párrafos */
         }
-       /* desactivar la animación latidos*/
+              /*cabezera iconos movil*/
+       @media (max-width: 768px) {
+           .services-row {
+               flex-direction: column;
+               align-items: center;
+               gap: 25px;
+           }
+           .service-item {
+               width: 100%;
+               padding: 10px;
+           }
+       }
+              /* desactivar la animación latidos*/
        @media (prefers-reduced-motion: reduce) {
            .icon {
                animation: none;
