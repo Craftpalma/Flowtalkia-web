@@ -86,25 +86,35 @@
             max-width: 100%; /* <-- AÑADE ESTO para anular el límite de 600px de los párrafos */
         }
 /* =========================================
-   DISEÑO MÓVIL PARA LOS SERVICIOS
+   DISEÑO MÓVIL PARA LOS SERVICIOS (2x2)
 ========================================= */
 @media (max-width: 768px) {
     .services-row {
-        flex-direction: column;
+        display: grid !important; 
+        grid-template-columns: repeat(2, 1fr) !important; /* 2 columnas */
+        gap: 20px;
+        justify-items: center;
         align-items: center;
-        gap: 30px; /* Separación vertical entre cada icono */
         margin-top: 20px;
         margin-bottom: 40px;
     }
-    
+
+    /* Hace que el 5º icono ocupe las dos columnas y se centre */
+    .services-row .service-item:last-child {
+        grid-column: span 2;
+    }
+
     .service-item {
-        width: 100%; /* Hace que el área clicable ocupe todo el ancho */
+        width: 100%;
         padding: 10px;
     }
 
-    /* Opcional: Hacer el icono un poco más grande en móvil para que se vea mejor */
     .service-item img {
-        height: 70px !important; 
+        height: 60px !important; 
+    }
+    
+    .service-item p {
+        font-size: 0.8rem !important;
     }
 }
               /* desactivar la animación latidos*/
