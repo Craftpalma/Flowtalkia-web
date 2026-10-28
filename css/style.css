@@ -15,10 +15,10 @@
            display: flex;
            flex-direction: column;
            align-items: center;
-           justify-content: flex-start; /* Quitamos el 'center' para que empiece desde arriba */
+           justify-content: center; /* Quitamos el 'center' para que empiece desde arriba */
            text-align: center;
            padding: 20px;
-           padding-bottom: 60px; /* Espacio para que el footer no pise el texto */
+           position: relative; /* Para que el footer se coloque bien */
         }
         .logo {
             font-size: 3rem;
@@ -83,6 +83,7 @@
            /* CAMBIOS AQUÍ */
            margin-top: auto; /* Empuja el footer al fondo si sobra espacio */
            padding-top: 30px; /* Un poco de aire arriba */
+           padding-bottom: 20px;
         }
 
         .footer-copy {
