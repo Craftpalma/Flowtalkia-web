@@ -36,18 +36,17 @@
     <!-- CONTENEDOR DE PROYECTOS -->
     <div style="max-width: 1000px; margin: 0 auto; padding: 0 20px; display: flex; flex-direction: column; gap: 40px; margin-bottom: 80px;">
 
-        <!-- TARJETA: SPAANS LEREN -->
-        <div class="portfolio-card" style="background: #1f2937; border-radius: 20px; overflow: hidden; display: flex; flex-wrap: wrap; box-shadow: 0 30px 60px rgba(0,0,0,0.4); border: 1px solid #374151;">
+              <!-- TARJETA: SPAANS LEREN -->
+        <div class="portfolio-card" style="background: #1f2937; border-radius: 20px; overflow: hidden; display: flex; flex-wrap: wrap; align-items: stretch; box-shadow: 0 30px 60px rgba(0,0,0,0.4); border: 1px solid #374151;">
             
-                      <!-- Imagen del proyecto -->
-            <div class="portfolio-image" style="flex: 1 1 400px; min-height: 350px; background: #111827; display: flex; align-items: center; justify-content: center; padding: 20px;">
-                
-                <img src="images/mockup-spaansleren.png" alt="Spaans Leren - Web" style="max-width: 100%; max-height: 100%; object-fit: contain; box-shadow: 0 10px 30px rgba(0,0,0,0.5); border-radius: 8px;">
-            
+            <!-- Imagen del proyecto (Izquierda, estrecha y se alarga) -->
+            <div class="portfolio-image" style="flex: 0 0 35%; min-width: 300px; background: #111827; display: flex;">
+                <!-- height: auto y width: 100% hace que la foto dictamine lo alto que será la tarjeta -->
+                <img src="images/mockup-spaansleren.png" alt="Spaans Leren - Web" style="width: 100%; height: auto; display: block; object-fit: cover; object-position: top;">
             </div>
             
-            <!-- Información del proyecto -->
-            <div class="portfolio-info" style="flex: 1 1 400px; padding: 40px; display: flex; flex-direction: column; justify-content: center;">
+            <!-- Información del proyecto (Derecha) -->
+            <div class="portfolio-info" style="flex: 1 1 500px; padding: 40px; display: flex; flex-direction: column; justify-content: flex-start;">
                 
                 <span style="color: #8055E8; font-weight: 700; font-size: 0.8rem; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px;">Sistema Web + IA</span>
                 
@@ -68,8 +67,8 @@
                     <p>Un sistema de gestión completo que ya quisieran muchas empresas, donde la profesora tiene el control total de su tiempo y los alumnos pueden reservar sin esperar a que nadie les conteste.</p>
                 </div>
 
-                <!-- Tecnologías -->
-                <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 30px;">
+                <!-- Tecnologías (margin-top: auto las empuja al fondo de su columna) -->
+                <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 30px; margin-top: auto;">
                     <span style="background: rgba(53, 99, 245, 0.1); color: #3563F5; padding: 5px 12px; border-radius: 50px; font-size: 0.8rem; font-weight: 600; border: 1px solid rgba(53, 99, 245, 0.2);">Full-Stack</span>
                     <span style="background: rgba(53, 99, 245, 0.1); color: #3563F5; padding: 5px 12px; border-radius: 50px; font-size: 0.8rem; font-weight: 600; border: 1px solid rgba(53, 99, 245, 0.2);">Bilingüe (ES/NL)</span>
                     <span style="background: rgba(128, 85, 232, 0.1); color: #8055E8; padding: 5px 12px; border-radius: 50px; font-size: 0.8rem; font-weight: 600; border: 1px solid rgba(128, 85, 232, 0.2);">Cloudflare D1</span>
