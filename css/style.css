@@ -9,13 +9,16 @@
             background-color: #111827; /* Tu azul marino oscuro */
             color: #ffffff;
             font-family: 'Manrope', sans-serif;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 20px;
+               
+           /* CAMBIOS IMPORTANTES AQUÍ */
+           min-height: 100vh; /* Permite que crezca si hay mucho contenido */
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           justify-content: flex-start; /* Quitamos el 'center' para que empiece desde arriba */
+           text-align: center;
+           padding: 20px;
+           padding-bottom: 60px; /* Espacio para que el footer no pise el texto */
         }
         .logo {
             font-size: 3rem;
