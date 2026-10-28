@@ -113,3 +113,23 @@
                animation: none;
            }
        }
+/* =========================================
+   ESTILOS GLOBALES PARA SUBPÁGINAS
+========================================= */
+
+/* Obliga al body de las subpáginas a empezar desde arriba y no centrarse */
+body.subpage {
+    justify-content: flex-start !important;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    min-height: 100vh;
+}
+
+/* Hace que el footer ya NO flote y se quede al fondo respetando el contenido */
+body.subpage .footer {
+    position: static !important;
+    margin-top: auto !important; /* Esto empuja el footer al fondo del todo */
+    width: 100%;
+    padding: 20px 0;
+    margin-bottom: 0;
+}
