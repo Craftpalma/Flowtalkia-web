@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowtalkia Pedidos | La app de pedidos por voz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos específicos para la landing page (puedes moverlos a tu style.css luego) */
+        .landing-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .hero-title {
+            font-size: 3rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+        .hero-subtitle {
+            font-size: 1.2rem;
+            color: #9ca3af;
+            max-width: 700px;
+            margin: 0 auto 40px auto;
+            line-height: 1.6;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 60px 0;
+        }
+        .feature-card {
+            background: #1f2937;
+            padding: 30px 20px;
+            border-radius: 16px;
+            border: 1px solid #374151;
+        }
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            display: block;
+        }
+        .feature-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+        .feature-text {
+            color: #9ca3af;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+        .pricing-section {
+            margin: 80px 0;
+        }
+        .pricing-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 40px;
+        }
+        .price-card {
+            background: #1f2937;
+            padding: 40px 30px;
+            border-radius: 16px;
+            border: 1px solid #374151;
+            flex: 1;
+            min-width: 280px;
+            max-width: 350px;
+            text-align: left;
+        }
+        .price-card.founder {
+            border: 2px solid #8055E8;
+            position: relative;
+        }
+        .badge {
+            background: #8055E8;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .price-amount {
+            font-size: 3rem;
+            font-weight: 800;
+            color: #ffffff;
+            margin: 20px 0;
+        }
+        .price-amount span {
+            font-size: 1rem;
+            color: #9ca3af;
+            font-weight: 400;
+        }
+        .price-list {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0 30px 0;
+            color: #d1d5db;
+            line-height: 2;
+        }
+        .btn-primary {
+            display: inline-block;
+            background: #8055E8;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: transform 0.2s, background 0.2s;
+            width: 100%;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .btn-primary:hover {
+            background: #6d46c7;
+            transform: translateY(-2px);
+        }
+        .btn-secondary {
+            display: inline-block;
+            background: transparent;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            border: 1px solid #8055E8;
+            width: 100%;
+            box-sizing: border-box;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body class="subpage"> 
+    <div class="landing-container">
+        
+        <!-- Botón volver -->
+        <div style="margin-bottom: 40px; text-align: left;">
+            <a href="index.html" style="color: #8055E8; text-decoration: none; font-weight: bold; font-size: 0.9rem;">← Volver a Flowtalkia Dev</a>
+        </div>
+
+        <!-- Logo Principal -->
+        <img src="images/devLogo.png" alt="Flowtalkia Icon" class="icon" style="width: 80px; margin-bottom: 20px;">
+        <div class="logo" style="display: flex; flex-direction: column; align-items: center; line-height: 1; margin-bottom: 40px;">
+            <span style="font-size: 2.5rem; color: white;">Flow<span class="gradient-text">talk</span>ia</span>
+            <span style="font-size: 1.2rem; color: #8055E8; font-weight: 800; letter-spacing: 4px; margin-top: 10px;">PEDIDOS</span>
+        </div>
+        
+        <!-- Hero Section -->
+        <h1 class="hero-title">Deja de apuntar pedidos en papel y pasarlos a Excel.</h1>
+        <p class="hero-subtitle">
+            Flowtalkia Pedidos es el asistente de voz que te permite dictar las cantidades directamente en la cámara frigorífica, sin quitarte los guantes. 
+            <strong>Habla, confirma y descarga tu Excel perfecto.</strong>
+        </p>
+        <a href="mailto:hola@flowtalkia.com?subject=Quiero%20probar%20Flowtalkia%20Pedidos" class="btn-primary" style="width: auto; padding: 20px 40px; font-size: 1.2rem;">
+            Solicitar Acceso Anticipado
+        </a>
+
+        <!-- Features Section -->
+        <div class="features-grid">
+            <div class="feature-card">
+                <span class="feature-icon">🎙️</span>
+                <div class="feature-title">Dictado Manos Libres</div>
+                <div class="feature-text">La app te lee el producto y tú solo dices la cantidad. Olvídate de teclear con frío.</div>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">🧊</span>
+                <div class="feature-title">Funciona Offline</div>
+                <div class="feature-text">Entra en la cámara más profunda. La app guarda tus pedidos y los procesa al salir.</div>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">📊</span>
+                <div class="feature-title">Tu Excel Original</div>
+                <div class="feature-text">Sube la plantilla del proveedor y descarga el archivo con todas las cantidades rellenas.</div>
+            </div>
+            <div class="feature-card">
+                <span class="feature-icon">🧠</span>
+                <div class="feature-title">Memoria Histórica</div>
+                <div class="feature-text">Te recuerda lo que pediste la semana pasada para que no tengas que hacer cálculos mentales.</div>
+            </div>
+        </div>
+
+        <!-- Pricing Section -->
+        <div class="pricing-section">
+            <h2 style="font-size: 2rem; color: white; font-weight: 800;">Precios sencillos, sin sorpresas</h2>
+            <p style="color: #9ca3af; margin-bottom: 20px;">Elige el plan que mejor se adapte a tu restaurante.</p>
+            
+            <div class="pricing-cards">
+                <!-- Plan Prueba -->
+                <div class="price-card">
+                    <h3 style="color: white; font-size: 1.2rem;">Plan Prueba</h3>
+                    <div class="price-amount">0€ <span>/ 7 días</span></div>
+                    <ul class="price-list">
+                        <li>✓ Acceso completo</li>
+                        <li>✓ Dictado por voz ilimitado</li>
+                        <li>✓ Descarga de Excel</li>
+                        <li>✓ 1 Restaurante</li>
+                    </ul>
+                    <a href="mailto:hola@flowtalkia.com?subject=Quiero%20el%20c%C3%B3digo%20de%20prueba" class="btn-secondary">Pedir código</a>
+                </div>
+
+                <!-- Plan Fundador -->
+                <div class="price-card founder">
+                    <span class="badge">OFERTA FUNDADOR</span>
+                    <h3 style="color: white; font-size: 1.2rem;">Plan Restaurante</h3>
+                    <div class="price-amount">15€ <span>/ mes</span></div>
+                    <p style="color: #9ca3af; font-size: 0.8rem; text-decoration: line-through;">Antes 29€/mes</p>
+                    <ul class="price-list">
+                        <li>✓ Todo lo del plan prueba</li>
+                        <li>✓ Sin límite de tiempo</li>
+                        <li>✓ Actualizaciones gratis</li>
+                        <li>✓ Soporte prioritario</li>
+                    </ul>
+                    <a href="mailto:hola@flowtalkia.com?subject=Quiero%20ser%20Fundador" class="btn-primary">Ser Fundador</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p class="footer-copy">
+            © <span id="year"></span> Flowtalkia. Todos los derechos reservados.
+        </p>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
