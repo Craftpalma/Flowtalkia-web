@@ -148,3 +148,7 @@ body.subpage .footer {
     padding: 20px 0;
     margin-bottom: 0;
 }
+/* Arreglo para los textos de la landing de pedidos */
+.feature-card p, .price-card p {
+    max-width: 100% !important;
+}
