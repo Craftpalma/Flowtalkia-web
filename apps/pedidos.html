@@ -91,14 +91,21 @@
         .badge {
             background: #8055E8;
             color: white;
-            padding: 5px 10px;
+            /* 🌟 Aumentamos el padding vertical (8px) para que respire en dos líneas */
+            padding: 8px 20px; 
             border-radius: 20px;
             font-size: 0.8rem;
             font-weight: bold;
             position: absolute;
-            top: -12px;
+            /* 🌟 Lo subimos un poco más (-20px) porque al ser más alto, necesita más espacio */
+            top: -20px; 
             left: 50%;
             transform: translateX(-50%);
+            
+            /* 🌟 Centramos el texto y ajustamos el espacio entre las dos líneas */
+            text-align: center;
+            line-height: 1.2; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
         }
         .price-amount {
             font-size: 3rem;
